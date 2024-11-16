@@ -42,6 +42,19 @@ namespace MethodsExercise
             return numOne / numTwo;
         }
 
+        public static int Sum(params int[] numbers)
+        {
+            int Sum = 0;
+
+            foreach (int number in numbers)
+            {
+                Sum += number;
+
+                
+            }
+            return Sum;
+        }
+            
         
 
 
@@ -49,12 +62,12 @@ namespace MethodsExercise
         public static void Main(string[] args)
         {
            // MadLib();
-        Console.WriteLine(Add(2,2));
-        Console.WriteLine(Subtract(10, 5));
-        Console.WriteLine(Multiply(10, 5));
-        Console.WriteLine(Divide(10, 5));
+        //Console.WriteLine(Add(2,2));
+        //Console.WriteLine(Subtract(10, 5));
+        //Console.WriteLine(Multiply(10, 5));
+        //Console.WriteLine(Divide(10, 5));
 
-
+        Console.WriteLine(Sum( 5, 5, 5, 5, 5, 5));
 
              
         }
